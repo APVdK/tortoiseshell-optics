@@ -1,0 +1,241 @@
+/*Universal Styles*/
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+/*Header Section*/
+
+header {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.container {
+  margin: auto;
+  width: 960px;
+}
+
+nav {
+  align-items: center;
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div {
+  align-items: center;
+  display: flex;
+}
+
+div > ul {
+  align-items: center;
+  display: flex;
+  padding-right: 1rem;
+}
+
+.logo-white {
+  height: 1.5rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+li {
+  padding: 1rem 1rem;
+}
+
+.truncated-menu {
+  display: none;
+}
+
+/*Banner Section*/
+
+.flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner {
+  background-color: white;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.5rem 5rem;
+}
+
+/*Services Section*/
+
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  align-items: center;
+  display: flex;
+  height: 8rem;
+  margin: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 5rem;
+}
+
+.service img {
+  margin-bottom: 1rem;
+  width: 5rem;
+}
+
+.exam img {
+  width: 3.5rem;
+}
+
+/*Information Section*/
+
+.supporting {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  margin-bottom: 4rem;
+  margin-right: 5%;
+  width: 35%;
+}
+
+h2 {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+
+p {
+  padding: 1rem 0;
+}
+
+/*Footer Section*/
+
+footer {
+  align-items: center;
+  display: flex;
+  background-color: azure;
+
+}
+
+footer > img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .banner {
+    margin: 5rem 2rem 0 0;
+    padding: 0.75rem 4rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  header div span {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .truncated-menu {
+    display: block;
+  }
+
+  .banner {
+    margin: 9rem auto 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1rem;
+    padding: 1rem 0
+  }
+
+  .services {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 3.77rem 0;
+  }
+
+  .service {
+    font-size: 0.77rem;
+    height: auto;
+    margin: 0.77rem;
+  }
+
+  .supporting {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info > h2 {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .info p {
+    font-size: .77rem;
+    padding: 1rem 1rem 4rem 1rem;
+  }
+
+  footer > img {
+    margin: 0 auto;
+  }
+
+  footer span {
+    display: none;
+  }
+}
